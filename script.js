@@ -114,6 +114,11 @@ function confirma(){
             comecarEtapa()
         }else{
             document.querySelector('.tela').innerHTML = '<div class="aviso--gigante pisca">FIM</div>';
+            var audio = new Audio('audio.mp3');
+            audio.addEventListener('canplaythrough', function() {
+            audio.play();
+            });
+            
         }
     }
 }
